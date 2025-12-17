@@ -7,6 +7,7 @@ URL:		https://pypi.org/project/readme-renderer/
 License:	Apache License, Version 2.0
 Group:		Development/Python
 BuildRequires:	python
+BuildRequires:  python%{pyver}dist(setuptools)
 Requires:	python-nh3
 BuildSystem:	python
 BuildArch:	noarch
