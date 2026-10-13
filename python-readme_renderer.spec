@@ -1,14 +1,16 @@
 Name:		python-readme_renderer
-Version:	45.0
+Version:	46.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/r/readme-renderer/readme_renderer-%{version}.tar.gz
 Summary:	readme_renderer is a library for rendering readme descriptions for Warehouse
 URL:		https://pypi.org/project/readme-renderer/
-License:	Apache License, Version 2.0
+License:	Apache-2.0
 Group:		Development/Python
 BuildRequires:	python
-BuildRequires:  python%{pyver}dist(setuptools)
-Requires:	python-nh3
+BuildRequires:  python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
+Requires:	python%{pyver}dist(nh3)
 BuildSystem:	python
 BuildArch:	noarch
 
